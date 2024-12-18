@@ -37,6 +37,6 @@ resource "null_resource" "install_dependencies" {
  
   triggers = {
     dependencies_versions = filemd5("lambda/requirements.txt")
-    source_versions = filemd5("my_lambda_function/my_lambda_function.py")
+    source_versions = filemd5("my_lambda_function.py")
   }
 }
