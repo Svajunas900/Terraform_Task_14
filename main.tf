@@ -34,7 +34,7 @@ resource "null_resource" "install_dependencies" {
   provisioner "local-exec" {
     command = "pip install -r lambda/requirements.txt -t lambda/"
   }
- 
+
   triggers = {
     dependencies_versions = filemd5("lambda/requirements.txt")
     source_versions = filemd5("lambda/my_lambda_function.py")
