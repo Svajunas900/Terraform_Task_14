@@ -22,3 +22,4 @@ def lambda_handler(event, context):
     except:
         return ErrorHandler.error()
     return r.json()
+
