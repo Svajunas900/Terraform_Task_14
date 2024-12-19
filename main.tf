@@ -30,12 +30,6 @@ resource "aws_lambda_function" "app_lambda_function"{
 }
 
 
-resource "aws_lambda_function_url" "test_latest" {
-  function_name      = aws_lambda_function.app_lambda_function.function_name
-  authorization_type = "NONE"
-}
-
-
 resource "null_resource" "install_dependencies" {
   provisioner "local-exec" {
     command = "pip install -r lambda/requirements.txt -t lambda/"

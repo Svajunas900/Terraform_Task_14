@@ -1,4 +1,4 @@
-name: Deplout to AWS Lambda (Python 3.13)
+name: Deploy to AWS Lambda (Python 3.13)
 
 on:
   push:
