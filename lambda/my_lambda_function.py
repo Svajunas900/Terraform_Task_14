@@ -8,6 +8,7 @@ class ErrorHandler:
 
 def lambda_handler(event, context): 
     user_input = None
+    print("Hello")
     if event.get("queryStringParameters"):
         user_input = event.get("queryStringParameters").get("user_input")
     else:
