@@ -1,1 +1,5 @@
 /.terraform
+.env
+requests.zip
+.terraform.lock.hcl
+/python
