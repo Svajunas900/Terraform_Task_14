@@ -31,7 +31,7 @@ jobs:
     - name: Package Lambda function
       run: |
         mkdir -p python
-        cp -r . python/
+        cp -r * python/
         cd python
         zip -r ../function.zip .
 
