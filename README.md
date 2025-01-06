@@ -6,7 +6,7 @@ to aws on every push or pull request to main branch.
 ## What it does
 
 Step 1. 
-It instals all required dependencies from requirements.txt file
+It installs all required dependencies from requirements.txt file
 
 Step 2.
 
